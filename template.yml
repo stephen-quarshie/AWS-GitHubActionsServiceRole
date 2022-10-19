@@ -46,6 +46,11 @@ Resources:
               - 'ecr:PutImage'
               - 'ecr:UploadLayerPart'
               - 'ecr:GetAuthorizationToken'
+              - 'cloudformation:*'
+            Resource: '*'
+          - Effect: Deny
+            Action:
+              - 'cloudformation:DeleteStack'
             Resource: '*'
       Roles:
         - !Ref Role

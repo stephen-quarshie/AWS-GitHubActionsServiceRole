@@ -46,6 +46,8 @@ Resources:
               - 'ecr:PutImage'
               - 'ecr:UploadLayerPart'
               - 'ecr:GetAuthorizationToken'
+              - 'ecr:CreateRepository'
+              - 'ecr:DescribeRepositories'
               - 'cloudformation:*'
             Resource: '*'
           - Effect: Deny

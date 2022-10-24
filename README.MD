@@ -1,8 +1,7 @@
 # Overview
-Create an AWS Cloudformation template that will allow us to access AWS resources from
-our GitHub CI/CD pipeline. Template creates the following AWS resources
+Create an AWS Cloudformation template that will configure the roles and permissions needed to allow our GitHub CI/CD pipeline to access AWS resources. Template creates the following AWS resources
 - OIDC Identity provider
-- Role with an inline policy
+- Role with an inline policy that grants access to push images to ECR and deploy Cloudformation template. Update the permissions to your needs
 
 
 ## Pre-requisite
